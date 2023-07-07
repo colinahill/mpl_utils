@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "mpl_utils"
+version = "0.1.0"
+description = "A collection of helper functions for Matplotlib"
+authors = ["colinahill <colinalastairhill@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "mpl_utils"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+matplotlib = "^3.7.2"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^6.0.0"
+isort = "^5.12.0"
+black = "^23.1.0"
+pre-commit = "^3.0.4"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = 'black'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
